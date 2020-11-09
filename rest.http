@@ -1,0 +1,12 @@
+// login
+POST http://localhost:3000/users
+Content-Type:application/json
+Charset:utf-8
+
+{
+    "username":"test",
+    "password":"test234"
+}
+
+
+###
