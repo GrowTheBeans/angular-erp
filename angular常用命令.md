@@ -27,9 +27,9 @@
     使用VSCode的REST Client插件
 
 ## 新建项目（不安装依赖）
-ng new taskmgr --skip-install 
 
-## 新建组件不加测试 
-ng generate component my-component --skipTests=false/true  true 时为不生成
+ng new taskmgr --skip-install
 
- 
+## 新建组件不加测试
+
+ng generate component my-component --skipTests=false/true  true 时为不生成 
