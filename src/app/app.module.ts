@@ -1,20 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { CommonModule } from '@angular/common';
 import { CoreModule } from './core/core.module';
-import { SiderbarComponent } from './siderbar/siderbar.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CommonModule,
-    SiderbarComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
-    CoreModule
+    CoreModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

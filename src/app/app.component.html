@@ -1,13 +1,18 @@
-<div>
-  <header>
-    <app-header>
+<mat-drawer-container class="example-container">
+   <!-- 侧滑有三种模式:over push side 一般和mat-drawer-container 联合使用-->
+  <mat-drawer mode="side" #sidernav>Drawer content</mat-drawer>
+  <div class="site">
+    <header>
+      <app-header (click)="sidernav.toggle()"> </app-header>
+    </header>
+    <main>
+      <app-siderbar></app-siderbar>
+    </main>
+    <footer>
+      <app-footer>
 
-    </app-header>
-  </header>
-  <main></main>
-  <footer>
-    <app-footer>
-      
-    </app-footer>
-  </footer>
-</div>
+      </app-footer>
+    </footer>
+
+  </div>
+</mat-drawer-container>
