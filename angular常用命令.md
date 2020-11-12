@@ -32,4 +32,7 @@ ng new taskmgr --skip-install
 ## 新建组件不加测试 
 ng generate component my-component --skipTests=false/true  true 时为不生成
 
+ # 路由内容快捷生成
  
+ 1.安装插件Angular 10 Snippets
+ 2.ng-router-featuremodule
