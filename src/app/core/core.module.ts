@@ -26,9 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SiderbarComponent],
 })
 export class CoreModule {
-  constructor( @Optional() @SkipSelf() parent: CoreModule, //加上@SkipSelf()注解
-      ir: MatIconRegistry,
-      ds: DomSanitizer) {
+  constructor( @Optional() @SkipSelf() parent: CoreModule, // 加上@SkipSelf()注解
+               ir: MatIconRegistry,
+               ds: DomSanitizer) {
     if (parent) {
       throw new Error('模块已经存在，不能再次加载!');
     }

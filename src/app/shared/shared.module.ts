@@ -12,7 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatIconModule,
     MatButtonModule,
   ],
-  exports:[
+  exports: [
     CommonModule,
     MatToolbarModule,
     MatIconModule,
@@ -20,5 +20,4 @@ import {MatButtonModule} from '@angular/material/button';
   ]
 })
 export class SharedModule {
-  
  }
