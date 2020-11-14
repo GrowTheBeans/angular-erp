@@ -8,11 +8,17 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Output() toggle = new EventEmitter();
+  @Output() toggleDarkTheme = new EventEmitter();
 
   constructor(){}
   ngOnInit(): void {
   }
+  // tslint:disable-next-line:typedef
   openSider(){
     this.toggle.emit();
+  }
+
+  onChange(checked:boolean){
+    this.toggleDarkTheme.emit(checked);
   }
 }

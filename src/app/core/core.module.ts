@@ -5,20 +5,18 @@ import { SiderbarComponent } from './siderbar/siderbar.component';
 import { MatIconRegistry} from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.util';
-import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonsComponent } from './buttons/buttons.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     SiderbarComponent,
+    ButtonsComponent,
   ],
   imports: [
-    HttpClientModule,
-    SharedModule,
-    BrowserAnimationsModule
+    SharedModule
   ],
   exports: [
     HeaderComponent,

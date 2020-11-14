@@ -4,6 +4,9 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { AppRoutingModule } from './app-routing.module';
+import { LoginModule } from './login/login.module';
+import { SharedModule } from './shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,9 +14,12 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    CoreModule,
+    AppRoutingModule,
     MatSidenavModule,
-    AppRoutingModule
+    CoreModule,
+    SharedModule,
+    FormsModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
