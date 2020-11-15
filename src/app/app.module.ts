@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './login/login.module';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { TaskModule } from './task/task.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     CoreModule,
     SharedModule,
     FormsModule,
-    LoginModule
+    LoginModule,
+    TaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,6 @@ import { RegisterComponent } from './register/register.component';
     SharedModule,
     LoginRoutingModule,
   ],
-    exports: [ LoginComponent,RegisterComponent]
+    exports: [ LoginComponent]
 })
 export class LoginModule { }

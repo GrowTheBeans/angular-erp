@@ -1,11 +1,11 @@
-<mat-drawer-container [class.myapp-dark-theme]="drakTheme">
+<mat-drawer-container [class.myapp-dark-theme]="dark">
    <!-- 侧滑有三种模式:over push side 一般和mat-drawer-container 联合使用-->
   <mat-drawer mode="over" #sidernav>
     <app-siderbar></app-siderbar>
   </mat-drawer>
   <div class="site">
     <header>
-      <app-header (toggole)="sidernav.toggle()" (toggleDarkTheme)="switchTheme($event)"> </app-header>
+      <app-header (toggole)="sidernav.toggle()" (toggleDarkTheme)="switchDarkTheme($event)"> </app-header>
     </header>
     <main>
       <router-outlet></router-outlet>
