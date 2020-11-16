@@ -21,7 +21,7 @@ import { TaskModule } from './task/task.module';
     SharedModule,
     FormsModule,
     LoginModule,
-    TaskModule
+    TaskModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

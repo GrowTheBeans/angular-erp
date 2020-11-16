@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   private _dark = false;
+
   // private oc: OverlayContainer
   constructor() {
   }
@@ -21,4 +22,5 @@ export class AppComponent {
     this._dark = dark;
     // this.oc.themeClass = dark ? 'myapp-dark-theme' : null;
   }
+ 
 }

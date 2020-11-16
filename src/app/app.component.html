@@ -8,7 +8,9 @@
       <app-header (toggole)="sidernav.toggle()" (toggleDarkTheme)="switchDarkTheme($event)"> </app-header>
     </header>
     <main>
-      <router-outlet></router-outlet>
+     <app-core-animation></app-core-animation>
+     <app-buttons></app-buttons>
+     <!-- <router-outlet></router-outlet> -->
     </main>
     <footer>
       <app-footer>

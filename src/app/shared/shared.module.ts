@@ -15,6 +15,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatDialogModule} from '@angular/material/dialog';
 
 const modules = [
   CommonModule,
@@ -26,13 +27,14 @@ const modules = [
   MatFormFieldModule,
   HttpClientModule,
   MatListModule,
-  BrowserAnimationsModule,
   MatSlideToggleModule,
   MatGridListModule,
   MatMenuModule,
   MatCheckboxModule,
   MatTooltipModule,
   MatChipsModule,
+  MatDialogModule,
+  BrowserAnimationsModule,
 ];
 @NgModule({
   declarations: [],

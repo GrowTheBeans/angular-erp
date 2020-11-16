@@ -7,6 +7,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.util';
 import { SharedModule } from '../shared/shared.module';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { AnimationComponent } from './animation/animation.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
     FooterComponent,
     SiderbarComponent,
     ButtonsComponent,
+    AnimationComponent,
+    DialogComponent,
   ],
   imports: [
     SharedModule
@@ -21,7 +25,10 @@ import { ButtonsComponent } from './buttons/buttons.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    SiderbarComponent],
+    SiderbarComponent,
+    ButtonsComponent,
+    AnimationComponent,
+  ],
 })
 export class CoreModule {
   constructor( @Optional() @SkipSelf() parent: CoreModule, // 加上@SkipSelf()注解
