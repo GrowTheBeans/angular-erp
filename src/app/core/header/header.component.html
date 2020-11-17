@@ -1,1 +1,10 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="openSider()">
+        <mat-icon>menu</mat-icon>
+        </button>
+        <span>&copy;企业协作平台</span>
+        <span class="fill-remaining-space"></span>
+        <mat-slide-toggle (change)="onChange($event)">黑夜模式</mat-slide-toggle>
+    </mat-toolbar-row>
+</mat-toolbar>

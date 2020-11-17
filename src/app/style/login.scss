@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10% auto;
+}
+.example-full-width {
+  width: 100%;
+}
+.text-right {
+  margin: 10px;
+  text-align: end;
+}

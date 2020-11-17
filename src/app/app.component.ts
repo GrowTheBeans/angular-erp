@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { OverlayContainer } from '@angular/material/OverlayContainer';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'taskmgr';
+
+  private _dark = false;
+
+  // private oc: OverlayContainer
+  constructor() {
+  }
+
+  get dark() {
+    return this._dark;
+  }
+
+  switchDarkTheme(dark: boolean) {
+    this._dark = dark;
+    // this.oc.themeClass = dark ? 'myapp-dark-theme' : null;
+  }
+ 
 }
