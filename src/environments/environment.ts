@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'http://192.168.182.66:8089', // 测试环境服务器地址(请求数据地址)
+  isPass: true, // 定义变量
 };
 
 /*
