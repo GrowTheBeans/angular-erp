@@ -1,0 +1,20 @@
+<button mat-icon-button type="button">
+    <mat-icon>add</mat-icon>
+</button>
+<!-- [@listAnim]="listAnim$ | async" -->
+<div class="container">
+     <app-project-item
+      class="card"
+      *ngFor="let project of projects$"
+      [item]="project"
+     >
+    <!-- (itemSelected)="selectProject(project)"
+     (launchUpdateDialog)="openUpdateDialog(project)"
+     (launchInviteDailog)="openInviteDialog(project)"
+     (launchDeleteDailog)="openDeleteDialog(project)" -->
+    </app-project-item>
+  </div>
+
+  <button mat-icon-button (click)="openNewProjectDialog()" type="button" class="fab-button">
+    <mat-icon>add</mat-icon>
+  </button>

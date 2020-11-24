@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { AnimationComponent } from './animation/animation.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { QuoteService } from '../service/quote.service';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,15 @@ import { DialogComponent } from './dialog/dialog.component';
     ButtonsComponent,
     AnimationComponent,
   ],
+  providers:[
+    {
+      //注入变量
+      provide:'BASE_CONFIG',useValue:{
+        url:'http://localhost:8080'
+      }
+    },
+    QuoteService
+  ]
 })
 export class CoreModule {
   constructor( @Optional() @SkipSelf() parent: CoreModule, // 加上@SkipSelf()注解

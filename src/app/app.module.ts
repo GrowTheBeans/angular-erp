@@ -8,6 +8,7 @@ import { LoginModule } from './login/login.module';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { TaskModule } from './task/task.module';
+import { ProjectModule } from './project/project.modules';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TaskModule } from './task/task.module';
     FormsModule,
     LoginModule,
     TaskModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

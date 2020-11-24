@@ -88,4 +88,10 @@ transition('red=>green', animate(5000, keyframes([
 
 ## 10.复杂序列
   使用 query() 和 stagger()（交错）函数执行多元素动画
+  query() 用于查找一个或多个内部 HTML 元素。
 
+  stagger() 用于为多元素动画应用级联延迟。
+
+  group() 用于并行执行多个动画步骤。
+
+  sequence() 用于逐个顺序执行多个动画步骤。
