@@ -33,13 +33,18 @@ export class ProjectListComponent implements OnInit {
   ngOnInit(): void {
   }
   openNewProjectDialog(){
+    console.log('openNewProjectDialog');
+    
     const img = `/assets/img/covers/${Math.floor(Math.random() * 40)}_tn.jpg`;
-    const thumbnails$ = this.getThumbnailsObs();
-    const dialogRef = this.dialog.open(NewProjectComponent, {data: { thumbnails: thumbnails$, img: img}});
+    // const thumbnails$ = this.getThumbnailsObs();
+    //  thumbnails: thumbnails$,
+    const dialogRef = this.dialog.open(NewProjectComponent, {data: {dark:true, img: img}});
     dialogRef.afterClosed().pipe(
       take(1)
     ).subscribe(val => {
       if (val) {
+        console.log(val);
+        
         // const converImg = this.buildImgSrc(val.coverImg);
         // this.store$.dispatch(new actions.AddProjectAction({...val, coverImg: converImg}));
       }
@@ -53,5 +58,6 @@ export class ProjectListComponent implements OnInit {
       .reduce((r, x) => {
         return [...r, x];
       }, []);
+      
   }
 }

@@ -16,6 +16,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 const modules = [
   CommonModule,
@@ -35,6 +36,7 @@ const modules = [
   MatChipsModule,
   MatDialogModule,
   BrowserAnimationsModule,
+  MatAutocompleteModule,
 ];
 @NgModule({
   declarations: [],

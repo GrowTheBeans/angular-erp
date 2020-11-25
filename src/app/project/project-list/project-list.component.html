@@ -1,4 +1,4 @@
-<button mat-icon-button type="button">
+<button mat-icon-button type="button" (click)="openNewProjectDialog()" >
     <mat-icon>add</mat-icon>
 </button>
 <!-- [@listAnim]="listAnim$ | async" -->
@@ -14,7 +14,3 @@
      (launchDeleteDailog)="openDeleteDialog(project)" -->
     </app-project-item>
   </div>
-
-  <button mat-icon-button (click)="openNewProjectDialog()" type="button" class="fab-button">
-    <mat-icon>add</mat-icon>
-  </button>
