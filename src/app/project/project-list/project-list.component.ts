@@ -60,4 +60,8 @@ export class ProjectListComponent implements OnInit {
       }, []);
       
   }
+  openInviteDialog(data){
+    console.log(data);
+    
+  }
 }

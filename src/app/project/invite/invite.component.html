@@ -1,11 +1,12 @@
 <h1 mat-dialog-title>邀请成员</h1>
 <div mat-dialog-content>
     <mat-form-field class="example-full-width">
-        <input placeholder="邀请组员" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        <!-- [formControl]="myControl" -->
+        <input type="text" placeholder="邀请组员" aria-label="Number" matInput [matAutocomplete]="auto">
         <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let option of options" [value]="option">
-                {{option}}
-            </mat-option>
+          <mat-option *ngFor="let option of options" [value]="option">
+            {{option}}
+          </mat-option>
         </mat-autocomplete>
     </mat-form-field>
 </div>

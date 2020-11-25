@@ -7,10 +7,10 @@
       class="card"
       *ngFor="let project of projects$"
       [item]="project"
+     (launchInviteDailog)="openInviteDialog(project)"
      >
     <!-- (itemSelected)="selectProject(project)"
      (launchUpdateDialog)="openUpdateDialog(project)"
-     (launchInviteDailog)="openInviteDialog(project)"
      (launchDeleteDailog)="openDeleteDialog(project)" -->
     </app-project-item>
   </div>

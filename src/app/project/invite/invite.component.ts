@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input, Inject } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-invite',
@@ -8,11 +9,22 @@ import { FormControl } from '@angular/forms';
 })
 export class InviteComponent implements OnInit {
 
-  constructor() { }
+  @Input() item;
+  @Output() launchInviteDailog = new EventEmitter<any>();
+
+  constructor(
+    @Inject(MAT_DIALOG_DATA) private data: any,
+    private dialogRef: MatDialogRef<InviteComponent>,
+  ) { }
   myControl = new FormControl();
   options: string[] = ['One', 'Two', 'Three'];
   
   ngOnInit(): void {
+    console.log(this.data);
+    
   }
-  onSubmit(){}
+  onSubmit(){
+    this.dialogRef.close({name:'24524'})
+    this.launchInviteDailog.emit({name:'2452'});
+  }
 }
